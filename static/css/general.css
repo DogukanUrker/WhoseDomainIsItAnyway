@@ -1,0 +1,12 @@
+html {
+  font-size: 125%;
+}
+::-moz-selection {
+  color: rgb(23 23 23);
+  background: rgb(250 204 21);
+}
+
+::selection {
+  color: rgb(23 23 23);
+  background: rgb(250 204 21);
+}

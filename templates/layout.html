@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set, compatibility, viewport, and theme color -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#171717" />
+
+    <!-- Set the title of the flaskBlog page -->
+    <title>Whose Domain Is It Anyway</title>
+
+    <!-- Favicon link -->
+    <link rel="icon" href="/static/images/logo.png" />
+
+    <!-- External stylesheet link for Tailwind CSS -->
+    <link rel="stylesheet" href="../static/css/general.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- External stylesheet link for Tabler Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.46.0/tabler-icons.min.css"
+    />
+
+    <!-- Custom block for additional head content -->
+    {% block head %} {% endblock head %}
+  </head>
+
+  <body id="body" class="bg-neutral-900 text-neutral-100 font-mono">
+    
+      <!-- Custom block for additional body content -->
+      {% block body %} {% endblock body %}
+    </div>
+  </body>
+</html>
