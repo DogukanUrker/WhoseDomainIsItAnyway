@@ -18,6 +18,8 @@ def hello():
 
 @app.route("/check/<domain>")
 def check(domain):
+    if "." not in domain:
+        domain += ".com"
     result = domainCheck(domain)
     if result:
         return render_template("check.html", result=result, domain=domain)
