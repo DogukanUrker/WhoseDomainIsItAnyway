@@ -24,7 +24,7 @@ def check(domain):
     if result:
         return render_template("check.html", result=result, domain=domain)
     else:
-        return render_template("404.html", domain=domain)
+        return render_template("domainNotFound.html", domain=domain)
 
 
 @app.route("/raw/<domain>")
@@ -35,6 +35,9 @@ def raw(domain):
     else:
         return {"error": "Domain not found"}
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template("404.html"), 404
 
 if __name__ == "__main__":
     app.run(debug=True)
